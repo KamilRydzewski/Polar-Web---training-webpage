@@ -289,7 +289,7 @@ nav.main-menu ul li ul {
 
 .main-banner div.owl-nav {
     position: absolute;
-    top: 50%;
+    bottom: 50%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -319,6 +319,7 @@ nav.main-menu ul li ul {
     align-items: center;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
     background-color: rgb(255, 255, 255, 0.6);
     box-sizing: border-box;
     pointer-events: all;
@@ -481,7 +482,7 @@ nav.main-menu ul li ul {
     }
 
     .box-content {
-        padding-bottom: 80px;
+        padding-bottom: 23px;
     }
 
     .slogan {
@@ -502,7 +503,7 @@ nav.main-menu ul li ul {
     }
 
     .baner-button {
-        padding: 16px 27px;
+        padding: 11px 17px;
         font-size: 9px;
     }
 
@@ -513,11 +514,15 @@ nav.main-menu ul li ul {
     .main-banner div.owl-nav {
         padding: 0 10px;
     }
+
+    .main-banner div.owl-dots {
+        display: none;
+    }
 }
 
 @media all and (max-width:600px) {
     .main-banner div.owl-nav {
-        padding: 0 5px;
+        display: none;
     }
 }
 
@@ -612,7 +617,7 @@ nav.main-menu ul li ul {
         margin: 0;
         height: 100vh;
         overflow-x: hidden;
-        padding-top: 60px;
+        padding: 60px 0;
     }
     nav.main-menu ul li ul {
         position: relative;
@@ -1936,6 +1941,22 @@ div.pricing-grid:only-child{
 .baner-container button:active {
     background-color: #f70930;
     transition: background-color 0.1s ease-out;
+}
+
+.mobile-baner-arrows{
+    position: absolute;
+    bottom: 10px;
+    display: none;
+    left: 47%;
+ }
+
+@media all and (max-width: 600px){
+    .mobile-baner-arrows{
+        display: block;
+        font-size: 11px;
+        color: white;
+        margin-top: 30px;
+    }
 }
 
 @media all and (max-width: 900px) {
