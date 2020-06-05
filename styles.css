@@ -335,7 +335,7 @@ nav.main-menu ul li ul {
     height: 15px;
     width: 15px;
     display: block;
-    box-shadow: -2px 2px 0 #262626;
+    box-shadow: -2px 2px 0 #ffffff;
     transform: rotate(45deg);
     margin-left: 9px;
 }
@@ -344,9 +344,10 @@ nav.main-menu ul li ul {
     height: 15px;
     width: 15px;
     display: block;
-    box-shadow: -2px 2px 0 #262626;
+    box-shadow: -2px 2px 0 #ffffff;
     transform: rotate(225deg);
     margin-right: 9px;
+
 }
 
 
@@ -512,16 +513,11 @@ nav.main-menu ul li ul {
     }
 
     .main-banner div.owl-nav {
-        padding: 0 10px;
+        padding: 0;
+        bottom: 5px;
     }
 
     .main-banner div.owl-dots {
-        display: none;
-    }
-}
-
-@media all and (max-width:600px) {
-    .main-banner div.owl-nav {
         display: none;
     }
 }
@@ -572,7 +568,9 @@ nav.main-menu ul li ul {
     .main-banner .owl-nav button.owl-prev {
         height: 35px;
         width: 35px;
+        background: transparent;
     }
+
 
     .main-banner button.owl-dot {
         height: 8px;
@@ -1217,7 +1215,6 @@ div.pictures:hover span {
     padding: 0 6px;
 }
 
-.face-slider .owl-item img {}
 
 .face-slider div.owl-nav {
     width: 350px;
@@ -1229,7 +1226,6 @@ div.pictures:hover span {
     pointer-events: none;
 }
 
-.face-slider.owl-drag .owl-item {}
 
 .face-slider .owl-next span {
     height: 15px;
@@ -1943,21 +1939,6 @@ div.pricing-grid:only-child{
     transition: background-color 0.1s ease-out;
 }
 
-.mobile-baner-arrows{
-    position: absolute;
-    bottom: 10px;
-    display: none;
-    left: 47%;
- }
-
-@media all and (max-width: 600px){
-    .mobile-baner-arrows{
-        display: block;
-        font-size: 11px;
-        color: white;
-        margin-top: 30px;
-    }
-}
 
 @media all and (max-width: 900px) {
     .baner {
