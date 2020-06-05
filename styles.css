@@ -326,16 +326,13 @@ nav.main-menu ul li ul {
     transition: background-color 0.5s ease-out;
 }
 
-.main-banner .owl-nav button.owl-prev:hover,
-.main-banner .owl-nav button.owl-next:hover {
-    background-color: #b3acac;
-}
+
 
 .owl-prev span {
     height: 15px;
     width: 15px;
     display: block;
-    box-shadow: -2px 2px 0 #ffffff;
+    box-shadow: -2px 2px 0 #000000;
     transform: rotate(45deg);
     margin-left: 9px;
 }
@@ -344,12 +341,16 @@ nav.main-menu ul li ul {
     height: 15px;
     width: 15px;
     display: block;
-    box-shadow: -2px 2px 0 #ffffff;
+    box-shadow: -2px 2px 0 #000000;
     transform: rotate(225deg);
     margin-right: 9px;
 
 }
 
+.main-banner .owl-nav button.owl-prev > span,
+.main-banner .owl-nav button.owl-next > span {
+    box-shadow: -2px 2px 0 #ffffff;
+}
 
 
 .right-arrow {
@@ -1617,12 +1618,8 @@ div.pricing-grid:only-child{
     justify-content: space-between;
     width: calc(100% + 80px);
     left: -40px;
-
 }
 
-@media all and (max-width: 600px){
-    
-}
 
 .services-list ul {
     list-style-type: none;
